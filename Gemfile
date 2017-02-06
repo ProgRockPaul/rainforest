@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+# To use ActiveModel has_secure_password
+gem 'bcrypt', '~> 3.1.10'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.0'
@@ -42,4 +44,3 @@ group :development do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
 end
-
