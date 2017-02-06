@@ -6,6 +6,6 @@
 <!-- <%#= link_to 'Back', products_path %> -->
 <!-- ruby code still applies unless you put a # in the middle of the ruby embed! -->
 <% @products.each do |product| %>
-  <p> Name: <%= product.name %> | Description: <%= product.description %> | Price: <%= product.price_in_cents %> cents | </p>
+  <p> Name: <%= product.name %> | Description: <%= product.description %> | Price: <%= product.formatted_price %> cents | </p>
   <%= link_to product.id, "/products/#{product.id}" %>
 <% end %>
