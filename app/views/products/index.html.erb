@@ -1,2 +1,10 @@
-<h1>Products#index</h1>
-<p>Find me in app/views/products/index.html.erb</p>
+<h1>Products</h1>
+<%= link_to "Sign Up", "/products/new" %>
+<%= link_to "Login", "/products/new" %>
+<%= link_to "New Product", "/products/new" %>
+<!-- <%= render 'form' %> -->
+<!-- <%= link_to 'Back', products_path %> -->
+<% @products.each do |product| %>
+  <p> Name: <%= product.name %> | Description: <%= product.description %> | Price: <%= product.price_in_cents %> cents | </p>
+  <%= link_to product.id, "/products/#{product.id}" %>
+<% end %>
